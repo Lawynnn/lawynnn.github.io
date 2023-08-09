@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discurp - Custom Discord Status</title>
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d978b3dc24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <h1>Discurp <strong id="version">v0.1.3</strong></h1>
+        <span>Customize your own discord status easy and without money.</span>
+        <div class="buttons">
+            <a href="" class="download"><i class="fa-solid fa-file-arrow-down"></i> Download</a>
+            <a href="" class="github"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="" class="discord"><i class="fa-brands fa-discord"></i> Discord</a>
+            <a href="" class="tutorial"><i class="fa-solid fa-circle-question"></i> Tutorial</a>
+            <a href="" class="donate"><i class="fa-solid fa-dollar-sign"></i> Donate</a>
+        </div>
+    </div>
+    <div class="content">
+        <img class="preview" src="/preview.png" alt="">
+    </div>
+    <div class="footer">
+        <span>© 2023 Discurp. All rights reserved.</span>
+    </div>
+</body>
+</html>
+
+<script>
+    (async() => {
+        const server = await fetch("https://jbgopanel.000webhostapp.com/discurp/server.php").then(d => d.json());
+        document.getElementById("version").innerText = "v" + server.version;
+    })();
+</script>
