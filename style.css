@@ -105,6 +105,8 @@ body {
 .content .preview {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
+    width: clamp(300px, 90%, 530px);
+    object-fit: cover;
 }
 
 .footer {
