@@ -136,6 +136,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #f3a3a3;
 }
+<<<<<<< HEAD
 
 /* MODAL */
 .modal-body {
@@ -203,3 +204,5 @@ body {
     color: white;
     text-decoration: underline;
 }
+=======
+>>>>>>> 93d0cce86800fc943466d4fbf8e260c819d085bf
